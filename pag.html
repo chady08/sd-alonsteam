@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para Mi Novia</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fce4ec;
+            color: #880e4f;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            display: none;
+            max-width: 800px;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #d81b60;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .images img {
+            max-width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .show-button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #ffffff;
+            background-color: #d81b60;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <button class="show-button" onclick="showLetter()">Ver Carta</button>
+    <div class="container" id="letterContainer">
+        <h1>Para Mi Querida Novia</h1>
+        <p>Querida [Nombre de tu Novia],</p>
+        <p>
+            Desde el momento en que te conocí, supe que eras especial. Cada día a tu lado es una bendición y me siento afortunado de tenerte en mi vida.
+            Tus sonrisas iluminan mis días y tu amor me da fuerzas para enfrentar cualquier cosa.
+        </p>
+        <p>
+            Gracias por ser tan comprensiva, amorosa y siempre estar ahí para mí. No puedo esperar para ver todo lo que el futuro nos depara juntos.
+            Eres mi todo y siempre lo serás.
+        </p>
+        <p>Con todo mi amor,</p>
+        <p>[Tu Nombre]</p>
+        
+        <div class="images">
+            <img src="ruta/a/tu/imagen1.jpg" alt="Imagen 1">
+            <img src="ruta/a/tu/imagen2.jpg" alt="Imagen 2">
+        </div>
+    </div>
+
+    <script>
+        function showLetter() {
+            document.getElementById('letterContainer').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
